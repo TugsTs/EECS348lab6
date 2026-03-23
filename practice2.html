@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Practice Two: CSS Font Control</title>
+
+<script>
+function changeStyle() {
+
+    let br = document.getElementById("br").value;
+    let bg = document.getElementById("bg").value;
+    let bb = document.getElementById("bb").value;
+    let tr = document.getElementById("tr").value;
+    let tg = document.getElementById("tg").value;
+    let tb = document.getElementById("tb").value;
+
+    let width = document.getElementById("width").value;
+    let p = document.getElementById("text");
+
+    p.style.color = "rgb(" + tr + "," + tg + "," + tb + ")";
+    p.style.borderColor = "rgb(" + br + "," + bg + "," + bb + ")";
+    p.style.borderWidth = width + "px";
+}
+</script>
+</head>
+<body>
+
+<h1>Practice Two: CSS Font Control</h1>
+
+<p id="text" style="border: solid black 2px; padding:10px;">
+According to all known laws of aviation, there is no way a bee should be able to fly. 
+Its wings are too small to get its fat little body off the ground. 
+The bee, of course, flies anyway because bees don't care what humans think is impossible.
+</p>
+
+Border Width: <input id="width"><br>
+Border Color Red(0-255): <input id="br"><br>
+Border Color Green(0-255): <input id="bg"><br>
+Border Color Blue(0-255): <input id="bb"><br>
+Text Color Red(0-255): <input id="tr"><br>
+Text Color Green(0-255): <input id="tg"><br>
+Text Color Blue(0-255): <input id="tb"><br>
+
+<button onclick="changeStyle()">Apply</button>
+
+</body>
+</html>
