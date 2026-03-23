@@ -6,8 +6,7 @@
 <h1>Practice Four: PHP Multiplication Table</h1>
 <form method="post">
 
-Enter a number:
-<input type="number" name="num"><input type="submit">
+Enter a number to multiply:<input type="number" name="num"><input type="submit">
 </form>
 
 <?php
@@ -22,8 +21,6 @@ if(isset($_POST["num"]))
         echo "<td>$i</td>";
     }
     echo "</tr>";
-
-    // table rows
     for($i = 1; $i <= $n; $i++)
     {
         echo "<tr>";
